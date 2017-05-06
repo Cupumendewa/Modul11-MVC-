@@ -106,13 +106,10 @@ public class home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        admin = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
         kode = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         barang = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
         simpan = new javax.swing.JButton();
         ubah = new javax.swing.JButton();
         bersihkan = new javax.swing.JButton();
@@ -129,15 +126,15 @@ public class home extends javax.swing.JFrame {
         cari = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tabel = new javax.swing.JTable();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        admin = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
-        getContentPane().add(admin);
-        admin.setBounds(100, 10, 90, 30);
-
-        jLabel1.setText("Admin Toko");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(10, 10, 80, 30);
         getContentPane().add(kode);
         kode.setBounds(200, 110, 320, 30);
 
@@ -152,11 +149,6 @@ public class home extends javax.swing.JFrame {
         jLabel5.setBounds(40, 160, 130, 30);
         getContentPane().add(barang);
         barang.setBounds(200, 160, 320, 30);
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel2.setText("Data Barang di Toko");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(280, 40, 250, 40);
 
         simpan.setBackground(new java.awt.Color(255, 255, 255));
         simpan.setText("Simpan");
@@ -280,6 +272,35 @@ public class home extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(40, 410, 780, 200);
 
+        jPanel1.setBackground(new java.awt.Color(51, 255, 51));
+        jPanel1.setLayout(null);
+
+        jLabel1.setText("Admin Toko");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(10, 10, 80, 30);
+
+        admin.setEditable(false);
+        jPanel1.add(admin);
+        admin.setBounds(100, 10, 90, 30);
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel2.setText("Data Barang di Toko");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(280, 30, 250, 40);
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 880, 90);
+
+        jPanel2.setBackground(new java.awt.Color(204, 255, 204));
+        jPanel2.setLayout(null);
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(0, 90, 880, 270);
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 0));
+        jPanel3.setLayout(null);
+        getContentPane().add(jPanel3);
+        jPanel3.setBounds(0, 360, 880, 260);
+
         setBounds(0, 0, 892, 656);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -377,6 +398,9 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton keluar;
     private javax.swing.JTextField kode;

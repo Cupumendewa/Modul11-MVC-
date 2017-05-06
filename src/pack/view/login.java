@@ -38,18 +38,17 @@ public class login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtnama = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        txtpass = new javax.swing.JTextField();
         SignIn = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        txtpass = new javax.swing.JPasswordField();
+        txtnama = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
-        getContentPane().add(txtnama);
-        txtnama.setBounds(110, 40, 100, 30);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Password");
@@ -60,8 +59,6 @@ public class login extends javax.swing.JFrame {
         jLabel2.setText("Username");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(110, 20, 100, 20);
-        getContentPane().add(txtpass);
-        txtpass.setBounds(110, 120, 100, 30);
 
         SignIn.setText("Sign In");
         SignIn.addActionListener(new java.awt.event.ActionListener() {
@@ -89,6 +86,16 @@ public class login extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3);
         jButton3.setBounds(180, 220, 100, 30);
+
+        jPanel1.setBackground(new java.awt.Color(0, 255, 255));
+        jPanel1.setLayout(null);
+        jPanel1.add(txtpass);
+        txtpass.setBounds(111, 120, 100, 30);
+        jPanel1.add(txtnama);
+        txtnama.setBounds(110, 40, 100, 30);
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 330, 290);
 
         setBounds(0, 0, 340, 325);
     }// </editor-fold>//GEN-END:initComponents
@@ -184,7 +191,8 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtnama;
-    private javax.swing.JTextField txtpass;
+    private javax.swing.JPasswordField txtpass;
     // End of variables declaration//GEN-END:variables
 }
